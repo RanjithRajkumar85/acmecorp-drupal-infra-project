@@ -1,3 +1,8 @@
+
+provider "aws" {
+  region = "us-west-1"
+}
+
 module "druble-instance" {
     source = "./terraform-infra-resources/terraform-infra-ec2"    
     ami           = var.ami
